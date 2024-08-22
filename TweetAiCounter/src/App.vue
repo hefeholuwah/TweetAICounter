@@ -20,7 +20,7 @@ export default {
   methods: {
     async fetchAutobotsCount() {
       const response = await axios.get(
-        "http://localhost:3000/api/autobots/count"
+        "https://tweetai.onrender.com/api/autobots/count"
       );
       this.autobotsCount = response.data.count;
     },
